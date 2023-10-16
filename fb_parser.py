@@ -131,11 +131,13 @@ if __name__ == '__main__':
         exit(1)
     try:
         post, urls = parse_post(address)
-        if post.shape:
+        print(post)
+        if post.shape[0] > 0:
             update_sheet(df = pd.DataFrame(post).T, sheet_name=SHEET_NAME, work_sheet=SHEET_TAB_IDX)
             add_urls_to_archive(urls.tolist(), URL_FILE)
             print(f"Data from the Facebook post has been successfully added to the Google Sheet '{SHEET_NAME}'.")
         else:
+            add_urls_to_archive([address],URL_FILE)
             print("Could not get the post (private post? closed group?)")
     except Exception as e:
         print(f"Error: An error occurred. {str(e)}")
