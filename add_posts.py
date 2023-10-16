@@ -11,7 +11,8 @@ SHEET_NAME = 'fb_comments'
 SHEET_TAB_IDX = 0
 
 #post google sheet
-POSTS_SHEET = "https://docs.google.com/spreadsheets/d/1JrIFDIbEo-Y7sZzch0O9HbHzUNi0m_jlr-xR5WFHitU/edit?usp=sharing"
+with open('site.txt', 'r') as file:
+    POSTS_SHEET = file.readline().strip()
 # url col index in the posts_sheet
 URL_COL = 2
 
