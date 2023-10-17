@@ -72,7 +72,7 @@ if __name__ == '__main__':
         update_sheet_row(data_list =  parsed.tolist(),
                         sheet_name=SHEET_NAME,
                         work_sheet=SHEET_TAB_IDX,
-                        col_names=parsed.index.tolist())
+                      )
         add_urls_to_archive([address], URL_FILE)
         print(f"Data from Ynet has been successfully added to the Google Sheet '{SHEET_NAME}'.")
 
