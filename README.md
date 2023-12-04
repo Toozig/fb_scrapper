@@ -33,7 +33,7 @@ python fb_parser.py [Facebook_Post_URL]
 ### Example
 
 ```bash
-python your_script.py https://facebook.com/post/12345
+python fb_parser.py https://facebook.com/post/12345
 ```
 
 This command will extract data from the specified Facebook post and add it to the Google Sheet defined in the global variables (`URL_FILE`, `SHEET_NAME`, and `SHEET_TAB_IDX`).
