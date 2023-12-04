@@ -25,7 +25,7 @@ This script allows you to extract data from a Facebook post and export it to a G
 To run the script, use the following command:
 
 ```bash
-python script_name.py [Facebook_Post_URL]
+python fb_parser.py [Facebook_Post_URL]
 ```
 
 - `Facebook_Post_URL`: The URL of the Facebook post you want to extract data from.
